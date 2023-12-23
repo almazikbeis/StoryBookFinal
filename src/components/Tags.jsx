@@ -1,0 +1,15 @@
+
+import React from 'react';
+import './Tags.css';
+
+const Tags = ({ tags }) => {
+  return (
+    <div className="tags">
+      {tags.map((tag, index) => (
+        <span key={index}>{tag}</span>
+      ))}
+    </div>
+  );
+};
+
+export default Tags;
